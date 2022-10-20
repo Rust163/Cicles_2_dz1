@@ -29,19 +29,20 @@ public class Main {
         int birthRate = 17;
         int mortality = 8;
         int l = 2022;
-        long totalPopulation = ((birthRate - mortality) + 1000);
+        long totalPopulation = populationSize * (birthRate - mortality) / 1000 ;
         while (populationSize >= 12_000_000) {
             populationSize += totalPopulation;
-            if (l <= 2031){
-                l ++;
+            if (l <= 2031) {
+                l++;
                 System.out.println("Год " + l + ", численность населения равна " + populationSize + " человек.");
 
-        }
-        }
+            }
 
+        }
 
 
     }
-
 }
+
+
 
